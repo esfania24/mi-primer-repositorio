@@ -1,0 +1,319 @@
+* {
+    font-family: 'Bebas Neue', cursive;
+    background-color:black ;
+  }
+
+  .container {/*contenedor home*/
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 2fr 2fr 0.5fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px; 
+    grid-template-areas: 
+      "logo menu menu menu"
+      "cuerpo cuerpo cuerpo cuerpo"
+      "bloque1 bloque2 bloque3 bloque4"
+      "pie pie pie pie"; 
+  }
+
+  @media screen and (max-width:780px) {/*contenedor home para celu*/
+    .container {
+      display: grid;
+      background-color: black;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px; 
+      grid-template-areas: 
+        "logo menu"
+        "cuerpo cuerpo"
+        "bloque1 bloque1"
+        "bloque2 bloque2"
+        "bloque3 bloque3"
+        "bloque4 bloque4"
+        "pie pie";
+      height: 100vh;
+  } }
+
+  .logo {
+    display: grid;
+    grid-area: logo;
+    position: sticky;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-style:solid;
+    text-decoration-color:aqua;
+    justify-items: center;
+    align-items: center;  
+  }
+  .logo h2 {
+    color: aqua;
+  }
+  @media screen and (max-width:780px) {
+    .logo h2 {
+        font-size: x-large;
+        letter-spacing: 1px;
+    }  
+  }
+  .menu {
+    grid-area: menu;
+    position: sticky;
+    margin: 10px;
+    padding: 10px; 
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+  }
+  .menu ul a {
+    color: aqua;
+    text-decoration: none;
+    font-size: large;
+    justify-content: space-between;
+  }
+ .menu ul li a:hover {
+    font-size: xx-large;
+  }
+@media screen and (max-width:780px) {
+  .menu ul {
+    display: block;
+    flex-direction: column;
+    font-size: medium; 
+  } 
+}
+/*...HOME*/
+  .cuerpo {
+    grid-area: cuerpo;
+    display: grid;
+    justify-content: center;
+    align-content:center;
+  }
+  .cuerpo h1 {
+    color: rgb(206, 40, 206);
+    font-size: xxx-large;
+    text-align: justify; 
+  }
+  @media screen and (max-width:780px) {
+    .cuerpo h1 {
+      font-size: x-large;
+      text-align: center;
+      color: rgb(206, 40, 206);
+    }
+  }
+  
+  .bloque-1 {
+    display: grid;
+    grid-area: bloque1;
+    justify-content: center;
+    align-content:center;
+  }
+  .bloque-1 h2 {
+    color: rgb(24, 238, 77);
+    justify-content: center;
+    align-content:center;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .bloque-2 {
+    display: grid;
+    grid-area: bloque2;
+    justify-content: center;
+    align-content: center;
+  }
+  .bloque-2 h2 {
+    color: rgb(24, 238, 77);
+    justify-content: center;
+    align-content:center;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .bloque-3 {
+    display: grid;
+    grid-area: bloque3;
+    justify-content: center;
+    align-content:center;
+  }
+  .bloque-3 h2 {
+    color: rgb(24, 238, 77);
+    justify-content: center;
+    align-content:center;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .bloque-4 {
+    display: grid;
+    grid-area: bloque4;
+    justify-content: center;
+    align-content:center;
+  }
+  .bloque-4 h2 {
+    color: rgb(24, 238, 77);
+    justify-content: center;
+    align-content:center;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  .pie {
+    grid-area: pie;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .derechos {
+    color: rgb(238, 35, 120);
+    margin: 5px;
+    padding: 5px;
+    letter-spacing: 1px;
+  }
+
+  .redes {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    justify-content: space-between;
+  }
+  .redes a {
+    font-size: 2em;
+    color: rgb(238, 35, 120);
+  }
+  /*...NOSOTROS*/
+  .container-nosotros {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 2fr 2fr 0.5fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px; 
+    grid-template-areas: 
+      "logo menu menu menu"
+      "foto1 somos foto2 texto1"
+      "mision foto3 texto2 foto4"
+      "pie pie pie pie"; 
+  }
+
+  @media screen and (max-width:1000px) {
+    .container-nosotros {
+      display: grid;
+      background-color: black;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px; 
+      grid-template-areas: 
+        "logo menu"
+        "foto1 somos"
+        "texto1 foto2"
+        "foto3 mision"
+        "texto2 foto4"
+        "pie pie"; 
+  } }
+  @media (min-width:320px) and (max-width:550px) {
+    .container-nosotros {
+      display: grid;
+      background-color: black;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px; 
+      grid-template-areas: 
+        "logo"
+        "menu"
+        "somos"
+        "texto1"
+        "foto1"
+        "mision"
+        "texto2"
+        "pie"; 
+      width:auto
+  } }
+  
+
+  .somos {
+    grid-area: somos;
+  }
+  .somos h2 {
+    color: rgb(24, 238, 77);
+    justify-content: center;
+    align-content:center;
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-align: center;
+  }
+  .foto1{
+    grid-area: foto1;
+    width: 100%;
+    max-height: auto;
+
+  }
+  .foto2{
+    grid-area: foto2;
+    max-width: 100%;
+    max-height: auto;
+  }
+  .foto3{
+    grid-area: foto3;
+    width: 100%;
+    max-height: auto;
+  }
+  .foto4{
+    grid-area: foto4;
+    width: 100%;
+    max-height: auto;
+  }
+
+  
+  .texto1 {
+    grid-area: texto1;
+  }
+
+  .texto1 p {
+    color: rgb(24, 238, 77);
+    justify-content: center;
+    align-content:center;
+    letter-spacing: 1px;
+    font-size: large;
+    text-align: justify;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .mision {
+    grid-area: mision;
+  }
+  .mision h2 {
+    color: rgb(206, 40, 206);
+    justify-content: center;
+    align-content:center;
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .texto2 {
+    grid-area: texto2;
+  }
+  .texto2 p {
+    color: rgb(206, 40, 206);
+    justify-content: center;
+    align-content:center;
+    letter-spacing: 1px;
+    font-size: large;
+    text-align: justify;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+img {
+  filter: grayscale(1);
+}
+@media screen and (max-width:1020px) {
+  .texto1 p, .texto2 p {
+    font-size: medium;
+  }
+}
+
+ 
