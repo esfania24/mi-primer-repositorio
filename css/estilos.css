@@ -43,12 +43,12 @@
     font-size: xx-large;
     text-decoration: underline;
     text-decoration-style:solid;
-    text-decoration-color:aqua;
+    text-decoration-color:rgb(211, 139, 23, 0.988);
     justify-items: center;
     align-items: center;  
   }
   .logo h2 {
-    color: aqua;
+    color: rgb(211, 139, 23, 0.988);
   }
   @media screen and (max-width:780px) {
     .logo h2 {
@@ -69,7 +69,7 @@
     justify-content: space-around;  
   }
   .menu ul a {
-    color: aqua;
+    color: rgb(211, 139, 23, 0.988);
     text-decoration: none;
     font-size: large;
     justify-content: space-between;
@@ -92,7 +92,7 @@
     align-content:center;
   }
   .cuerpo h1 {
-    color: rgb(206, 40, 206);
+    color: rgb(211, 139, 23, 0.988);
     font-size: xxx-large;
     text-align: justify; 
   }
@@ -100,7 +100,7 @@
     .cuerpo h1 {
       font-size: x-large;
       text-align: center;
-      color: rgb(206, 40, 206);
+      color: rgb(211, 139, 23, 0.988);
     }
   }
   
@@ -111,7 +111,7 @@
     align-content:center;
   }
   .bloque-1 h2 {
-    color: rgb(24, 238, 77);
+    color: rgb(211, 139, 23, 0.988);
     justify-content: center;
     align-content:center;
     letter-spacing: 1px;
@@ -124,7 +124,7 @@
     align-content: center;
   }
   .bloque-2 h2 {
-    color: rgb(24, 238, 77);
+    color: rgb(211, 139, 23, 0.988);
     justify-content: center;
     align-content:center;
     letter-spacing: 1px;
@@ -137,7 +137,7 @@
     align-content:center;
   }
   .bloque-3 h2 {
-    color: rgb(24, 238, 77);
+    color: rgb(211, 139, 23, 0.988);
     justify-content: center;
     align-content:center;
     letter-spacing: 1px;
@@ -150,7 +150,7 @@
     align-content:center;
   }
   .bloque-4 h2 {
-    color: rgb(24, 238, 77);
+    color: rgb(211, 139, 23, 0.988);
     justify-content: center;
     align-content:center;
     letter-spacing: 1px;
@@ -164,7 +164,7 @@
     justify-content: space-between;
   }
   .derechos {
-    color: rgb(238, 35, 120);
+    color: rgb(211, 139, 23, 0.988);
     margin: 5px;
     padding: 5px;
     letter-spacing: 1px;
@@ -179,7 +179,7 @@
   }
   .redes a {
     font-size: 2em;
-    color: rgb(238, 35, 120);
+    color: rgb(211, 139, 23, 0.988);
   }
   /*...NOSOTROS*/
   .container-nosotros {
@@ -237,7 +237,7 @@
     grid-area: somos;
   }
   .somos h2 {
-    color: rgb(24, 238, 77);
+    color: rgb(211, 139, 23, 0.988);
     justify-content: center;
     align-content:center;
     letter-spacing: 1px;
@@ -272,7 +272,7 @@
   }
 
   .texto1 p {
-    color: rgb(24, 238, 77);
+    color: rgb(211, 139, 23, 0.988);
     justify-content: center;
     align-content:center;
     letter-spacing: 1px;
@@ -286,7 +286,7 @@
     grid-area: mision;
   }
   .mision h2 {
-    color: rgb(206, 40, 206);
+    color: rgb(211, 139, 23, 0.988);
     justify-content: center;
     align-content:center;
     letter-spacing: 1px;
@@ -298,7 +298,7 @@
     grid-area: texto2;
   }
   .texto2 p {
-    color: rgb(206, 40, 206);
+    color: rgb(211, 139, 23, 0.988);
     justify-content: center;
     align-content:center;
     letter-spacing: 1px;
