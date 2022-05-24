@@ -1,26 +1,26 @@
 * {
     font-family: 'Bebas Neue', cursive;
-    background-color: black ;
+    
   }
 
   .container {/*contenedor home*/
     display: grid;
-    background-color: black;
+    background-color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 2fr 2fr 0.5fr;
     grid-column-gap: 15px;
     grid-row-gap: 15px; 
     grid-template-areas: 
-      "logo menu menu menu"
+      "logo menu menu menu "
       "cuerpo cuerpo cuerpo cuerpo"
-      "bloque1 bloque2 bloque3 bloque4"
+      "cuerpo cuerpo cuerpo cuerpo"
       "pie pie pie pie"; 
   }
 
   @media screen and (max-width:780px) {/*contenedor home para celu*/
     .container {
       display: grid;
-      background-color: black;
+      background-color: white;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
       grid-column-gap: 15px;
@@ -45,10 +45,11 @@
     text-decoration-style:solid;
     text-decoration-color:rgb(211, 139, 23, 0.988);
     justify-items: center;
-    align-items: center;  
+    align-items: center; 
   }
   .logo h2 {
     color: rgb(211, 139, 23, 0.988);
+    rgb(173, 169, 169)
   }
   @media screen and (max-width:780px) {
     .logo h2 {
@@ -66,7 +67,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;  
+    justify-content: space-around;
   }
   .menu ul a {
     color: rgb(211, 139, 23, 0.988);
@@ -90,7 +91,6 @@
     display: grid;
     justify-content: center;
     align-content:center;
-
   }
   .cuerpo h1 {
     color: rgb(211, 139, 23, 0.988);
@@ -164,12 +164,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: gainsboro;
   }
   .derechos {
     color: rgb(211, 139, 23, 0.988);
     margin: 5px;
     padding: 5px;
     letter-spacing: 1px;
+    background-color: gainsboro;
   }
 
   .redes {
@@ -178,15 +180,17 @@
     height: 60px;
     margin: 10px;
     justify-content: space-between;
+    background-color: gainsboro;
   }
   .redes a {
     font-size: 2em;
     color: rgb(211, 139, 23, 0.988);
+    background-color: gainsboro;
   }
   /*...NOSOTROS*/
   .container-nosotros {
     display: grid;
-    background-color: black;
+    background-color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 2fr 2fr 0.5fr;
     grid-column-gap: 15px;
@@ -201,7 +205,7 @@
   @media screen and (max-width:1000px) {
     .container-nosotros {
       display: grid;
-      background-color: black;
+      background-color: white;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr;
       grid-column-gap: 15px;
@@ -217,7 +221,7 @@
   @media (min-width:320px) and (max-width:550px) {
     .container-nosotros {
       display: grid;
-      background-color: black;
+      background-color: white;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
       grid-column-gap: 15px;
@@ -259,22 +263,25 @@
     grid-area: foto1;
     width: 100%;
     max-height: auto;
-
+    border-radius: 150px;
   }
   .foto2{
     grid-area: foto2;
     max-width: 100%;
     max-height: auto;
+    border-radius: 150px;
   }
   .foto3{
     grid-area: foto3;
     width: 100%;
     max-height: auto;
+    border-radius: 150px;
   }
   .foto4{
     grid-area: foto4;
     width: 100%;
     max-height: auto;
+    border-radius: 150px;
   }
 
   
