@@ -1,6 +1,6 @@
 * {
     font-family: 'Bebas Neue', cursive;
-    background-color:black ;
+    background-color: black ;
   }
 
   .container {/*contenedor home*/
@@ -90,11 +90,13 @@
     display: grid;
     justify-content: center;
     align-content:center;
+
   }
   .cuerpo h1 {
     color: rgb(211, 139, 23, 0.988);
     font-size: xxx-large;
     text-align: justify; 
+  
   }
   @media screen and (max-width:780px) {
     .cuerpo h1 {
@@ -217,20 +219,29 @@
       display: grid;
       background-color: black;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
+      grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
       grid-column-gap: 15px;
       grid-row-gap: 15px; 
       grid-template-areas: 
         "logo"
         "menu"
         "somos"
-        "texto1"
         "foto1"
+        "texto1"
         "mision"
+        "foto2"
         "texto2"
         "pie"; 
       width:auto
-  } }
+  }
+ 
+  .foto3 {
+    display:none
+  }
+  .foto4 {
+    display:none
+  }
+}
   
 
   .somos {
@@ -307,9 +318,9 @@
     padding-right: 1em;
     padding-left: 1em;
   }
-img {
+/*img {
   filter: grayscale(1);
-}
+}*/
 @media screen and (max-width:1020px) {
   .texto1 p, .texto2 p {
     font-size: medium;
