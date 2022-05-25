@@ -1,18 +1,16 @@
 * {
-    font-family: 'Bebas Neue', cursive;
-    
+    font-family: 'Bebas Neue', cursive;  
   }
 
   .container {/*contenedor home*/
     display: grid;
     background-color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 2fr 2fr 0.5fr;
+    grid-template-rows: 1fr 3fr 0.5fr;
     grid-column-gap: 15px;
     grid-row-gap: 15px; 
     grid-template-areas: 
       "logo menu menu menu "
-      "cuerpo cuerpo cuerpo cuerpo"
       "cuerpo cuerpo cuerpo cuerpo"
       "pie pie pie pie"; 
   }
@@ -22,16 +20,12 @@
       display: grid;
       background-color: white;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+      grid-template-rows: 1fr 2fr 0.5fr;
       grid-column-gap: 15px;
       grid-row-gap: 15px; 
       grid-template-areas: 
         "logo menu"
         "cuerpo cuerpo"
-        "bloque1 bloque1"
-        "bloque2 bloque2"
-        "bloque3 bloque3"
-        "bloque4 bloque4"
         "pie pie";
       height: 100vh;
   } }
@@ -49,7 +43,8 @@
   }
   .logo h2 {
     color: rgb(211, 139, 23, 0.988);
-    rgb(173, 169, 169)
+    rgb(173, 169, 169);
+    position: sticky;
   }
   @media screen and (max-width:780px) {
     .logo h2 {
@@ -89,15 +84,14 @@
   .cuerpo {
     grid-area: cuerpo;
     display: grid;
-    justify-content: center;
-    align-content:center;
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/07/10/33/crowd-2045499__340.jpg");
   }
   .cuerpo h1 {
     color: rgb(211, 139, 23, 0.988);
     font-size: xxx-large;
-    text-align: justify; 
-  
+    text-align: center; 
   }
+
   @media screen and (max-width:780px) {
     .cuerpo h1 {
       font-size: x-large;
@@ -325,9 +319,7 @@
     padding-right: 1em;
     padding-left: 1em;
   }
-/*img {
-  filter: grayscale(1);
-}*/
+
 @media screen and (max-width:1020px) {
   .texto1 p, .texto2 p {
     font-size: medium;
